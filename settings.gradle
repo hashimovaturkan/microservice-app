@@ -1,4 +1,3 @@
 rootProject.name = 'microservice-app'
-include 'account-service', 'config-server'
-include 'docs'
+include 'account-service', 'config-server', 'docs', 'eureka-server'
 
