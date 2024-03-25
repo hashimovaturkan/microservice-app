@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="xsds">
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/dto/AccountDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/api/AccountApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/api/AccountApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/configuration/CustomBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/configuration/CustomBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,7 +192,7 @@
       <workItem from="1711298274767" duration="14000" />
       <workItem from="1711298301424" duration="79000" />
       <workItem from="1711355695201" duration="7230000" />
-      <workItem from="1711364481696" duration="2389000" />
+      <workItem from="1711364481696" duration="3349000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -190,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711366658557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix(fix): fix">
+      <option name="closed" value="true" />
+      <created>1711366887881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711366887881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +220,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="config eureka server/client" />
     <MESSAGE value="xsds" />
-    <option name="LAST_COMMIT_MESSAGE" value="xsds" />
+    <MESSAGE value="fix(fix): fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
