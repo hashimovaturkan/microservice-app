@@ -2,19 +2,22 @@ package com.microservice.accountservice.api;
 
 import com.microservice.accountservice.dto.AccountDto;
 import com.microservice.accountservice.service.AccountService;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.data.domain.Slice;
 
 
 @RestController
 @RequestMapping("account")
-@RequiredArgsConstructor
 public class AccountApi {
 
     private final AccountService accountService;
+
+    public AccountApi(AccountService accountService) {
+        this.accountService = accountService;
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<AccountDto> get(@PathVariable("id") String id) {

@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: ${PROFILE:DEV}
+  application:
+    name: ticket-service
+
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
+#  cloud:
+#    stream:
+#      bindings:
+#        output:
+#          destination: msqueue
+
+
+

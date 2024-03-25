@@ -14,6 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @EqualsAndHashCode(of = {"id"})
 @ToString
+@Data
 @Table(value = "accounts")
 public class Account implements Serializable {
 
