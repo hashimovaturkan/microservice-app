@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/eureka-server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/017b72fa-634c-41b3-acfc-9a64f43c7c8c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/017b72fa-634c-41b3-acfc-9a64f43c7c8c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="xsds">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/account-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/account-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +83,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "D:/Lesson/Java/microservice-app/docs/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -188,12 +180,27 @@
       <workItem from="1711298274767" duration="14000" />
       <workItem from="1711298301424" duration="79000" />
       <workItem from="1711355695201" duration="7230000" />
-      <workItem from="1711364481696" duration="1887000" />
+      <workItem from="1711364481696" duration="2389000" />
     </task>
+    <task id="LOCAL-00001" summary="config eureka server/client">
+      <option name="closed" value="true" />
+      <created>1711366658557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711366658557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="config eureka server/client" />
+    <MESSAGE value="xsds" />
+    <option name="LAST_COMMIT_MESSAGE" value="xsds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
