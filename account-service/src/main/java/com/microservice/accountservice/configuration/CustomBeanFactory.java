@@ -1,0 +1,14 @@
+package com.microservice.accountservice.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CustomBeanFactory {
+
+//    @Bean
+//    public ModelMapper getModelMapper() {
+//        return new ModelMapper();
+//    }
+
+}
