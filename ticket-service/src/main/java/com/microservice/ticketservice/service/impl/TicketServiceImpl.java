@@ -5,11 +5,11 @@ import com.microservice.ticketservice.repository.TicketRepository;
 import com.microservice.ticketservice.repository.elasticSearch.TicketElasticRepository;
 import com.microservice.ticketservice.service.TicketNotificationService;
 import com.microservice.ticketservice.service.TicketService;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
