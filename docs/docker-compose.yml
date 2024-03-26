@@ -7,7 +7,6 @@ services:
 
   mysql:
     image: mysql:5.6.30
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: user
       MYSQL_DATABASE: microserviceapp
@@ -15,12 +14,12 @@ services:
       - '3306:3306'
 
   elasticsearch:
-    image: elasticsearch:6.8.5
+    image: elasticsearch:8.12.2
     ports:
       - 9200:9200
       - 9300:9300
     environment:
       xpack.security.enabled: false
-#      xpack.security.enrollment.enabled: false
+      xpack.security.enrollment.enabled: false
       discovery.type: single-node
 

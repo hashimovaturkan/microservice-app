@@ -7,16 +7,14 @@
     <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22961073-84e2-49b2-a7d4-5aee952273cb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22961073-84e2-49b2-a7d4-5aee952273cb/storage_v2/_src_/schema/system.L3Icyw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/22961073-84e2-49b2-a7d4-5aee952273cb/storage_v2/_src_/schema/system_schema.sb0HgQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa/storage_v2/_src_/schema/microserviceapp.ENWGuA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa/storage_v2/_src_/schema/microserviceapp.ENWGuA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef701b7c-a436-4abc-aaee-27e97161a3e0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef701b7c-a436-4abc-aaee-27e97161a3e0/storage_v2/_src_/schema/system.L3Icyw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef701b7c-a436-4abc-aaee-27e97161a3e0/storage_v2/_src_/schema/system_schema.sb0HgQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/account-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/account-service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +135,9 @@
     ]
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Lesson\Java\microservice-app\account-service\src\main\java" />
@@ -195,17 +196,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicketServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="microservice-app.ticket-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.ticketservice.TicketServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservice.ticketservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docs: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docs/docker-compose.yml" />
-        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -251,10 +257,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Spring Boot.TicketServiceApplication" />
         <item itemvalue="Docker.docs.cassandra: Compose Deployment" />
-        <item itemvalue="Docker.docs.elasticsearch: Compose Deployment" />
         <item itemvalue="Docker.docs.mysql: Compose Deployment" />
-        <item itemvalue="Docker.docs: Compose Deployment" />
+        <item itemvalue="Docker.docs.elasticsearch: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +289,7 @@
       <workItem from="1711453723637" duration="161000" />
       <workItem from="1711453906669" duration="1898000" />
       <workItem from="1711456132692" duration="2411000" />
+      <workItem from="1711466386378" duration="4505000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -366,6 +373,26 @@
           <url>file://$PROJECT_DIR$/docs/src/main/java/org/example/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/api/AccountApi.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
