@@ -10,10 +10,19 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/account-service" />
+            <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/docs" />
             <option value="$PROJECT_DIR$/eureka-server" />
             <option value="$PROJECT_DIR$/ticket-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/common" />
           </set>
         </option>
       </GradleProjectSettings>

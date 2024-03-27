@@ -1,4 +1,4 @@
-package com.microservice.accountservice.dto;
+package com.microservice.common.client.contract;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

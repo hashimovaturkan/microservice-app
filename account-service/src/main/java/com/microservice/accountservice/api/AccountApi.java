@@ -1,8 +1,7 @@
 package com.microservice.accountservice.api;
 
-import com.microservice.accountservice.dto.AccountDto;
 import com.microservice.accountservice.service.AccountService;
-import lombok.NoArgsConstructor;
+import com.microservice.common.client.contract.AccountDto;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;

@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 //@EnableJpaRepositories("com.microservice")
 //@EnableElasticsearchRepositories
-//@ComponentScan("com.microservice")
+@ComponentScan("com.microservice")
 public class TicketConfiguration {
 
     @Bean

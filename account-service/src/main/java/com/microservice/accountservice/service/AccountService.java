@@ -1,10 +1,10 @@
 package com.microservice.accountservice.service;
 
-import com.microservice.accountservice.dto.AccountDto;
 import com.microservice.accountservice.entity.Account;
 import com.microservice.accountservice.repo.AccountRepository;
 import java.util.Optional;
-import lombok.RequiredArgsConstructor;
+
+import com.microservice.common.client.contract.AccountDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
