@@ -4,27 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/CommonApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/client/AccountServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/client/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/client/contract/AccountDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca/storage_v2/_src_/schema/springcloud.SBwJ1Q.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca/storage_v2/_src_/schema/springcloud.SBwJ1Q.meta" afterDir="false" />
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="Common config module">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/messaging/TicketNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/api/AccountApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/api/AccountApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/dto/AccountDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/start.sql" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/start.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/TicketNotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/TicketNotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +36,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/eureka-server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/notification-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ticket-service">
@@ -65,6 +61,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/ticket-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/notification-service">
           <activation />
         </task>
         <projects_view>
@@ -168,7 +167,73 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+    <configuration name="microservice-app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="microservice-app [dependencyManagement]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencyManagement" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="notification-service [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/notification-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="microservice-app.account-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.accountservice.AccountServiceApplication" />
@@ -178,6 +243,13 @@
     </configuration>
     <configuration name="CommonApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="microservice-app.common.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.common.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.common.CommonApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,8 +289,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microservice-app.notification-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.notificationservice.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microservice-app.notification-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.notificationservice.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TicketServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="microservice-app.ticket-service.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.ticketservice.TicketServiceApplication" />
       <extension name="coverage">
         <pattern>
@@ -230,39 +317,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docs: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docs/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docs.cassandra: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="cassandra" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.TicketServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Docker.docs: Compose Deployment" />
-        <item itemvalue="Docker.docs.cassandra: Compose Deployment" />
+        <item itemvalue="Spring Boot.TicketServiceApplication" />
+        <item itemvalue="Gradle.microservice-app [dependencyManagement]" />
+        <item itemvalue="Gradle.notification-service [dependencies]" />
+        <item itemvalue="Gradle.microservice-app [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +365,7 @@
       <workItem from="1711453906669" duration="1898000" />
       <workItem from="1711456132692" duration="2411000" />
       <workItem from="1711466386378" duration="4505000" />
-      <workItem from="1711520342997" duration="5800000" />
+      <workItem from="1711520342997" duration="37907000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -342,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711450497048</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Common config module">
+      <option name="closed" value="true" />
+      <created>1711533744780</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711533744781</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +438,8 @@
     <MESSAGE value="Ticket service config" />
     <MESSAGE value="Elastic search" />
     <MESSAGE value="fix(elastic search): fix config prob" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(elastic search): fix config prob" />
+    <MESSAGE value="Common config module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Common config module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -407,6 +489,29 @@
           <line>29</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java</url>
+          <line>18</line>
+          <properties class="com.microservice.notificationservice.config.NotificationDistributionConfig" method="input">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="27" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

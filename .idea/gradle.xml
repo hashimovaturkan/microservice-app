@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/config-server" />
             <option value="$PROJECT_DIR$/docs" />
             <option value="$PROJECT_DIR$/eureka-server" />
+            <option value="$PROJECT_DIR$/notification-service" />
             <option value="$PROJECT_DIR$/ticket-service" />
           </set>
         </option>
