@@ -4,17 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="fix(fix): rabbitmq">
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/NotificationDistributionService.java" afterDir="false" />
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa/storage_v2/_src_/schema/microserviceapp.ENWGuA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00c0a5e9-75be-4c45-87f5-b5dce26cbffa/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4de245e1-6c8f-4366-8ddf-d989c808846d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4de245e1-6c8f-4366-8ddf-d989c808846d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4de245e1-6c8f-4366-8ddf-d989c808846d/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4de245e1-6c8f-4366-8ddf-d989c808846d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/AccountServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservice/accountservice/AccountServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/account-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/account-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/eureka-server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/eureka-server.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/TicketNotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/TicketNotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/TicketServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/TicketServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +77,9 @@
         <task path="$PROJECT_DIR$/notification-service">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/eureka-server">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -90,7 +108,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="5407d2ec-ee76-41b4-adc3-49fffef432ec" />
+        <option name="accountId" value="07243bac-3289-4695-8755-5d0d7ae86984" />
         <option name="url" value="https://github.com/hashimovaturkan/microservice-app.git" />
       </UrlAndAccount>
     </option>
@@ -116,34 +134,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "D:/Lessons/Java/Projects/javaMicroservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "D:/Lesson/Java/microservice-app/docs/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lessons/Java/Projects/javaMicroservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Lesson/Java/microservice-app/docs/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "cassandra",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;cassandra&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -198,28 +216,6 @@
         <option name="taskNames">
           <list>
             <option value="dependencyManagement" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="notification-service [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/notification-service" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -325,13 +321,26 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docs.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.TicketServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Gradle.microservice-app [dependencyManagement]" />
-        <item itemvalue="Gradle.notification-service [dependencies]" />
         <item itemvalue="Gradle.microservice-app [dependencies]" />
+        <item itemvalue="Docker.docs.zipkin: Compose Deployment" />
+        <item itemvalue="Gradle.microservice-app [dependencyManagement]" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +370,8 @@
       <workItem from="1711453906669" duration="1898000" />
       <workItem from="1711456132692" duration="2411000" />
       <workItem from="1711466386378" duration="4505000" />
-      <workItem from="1711520342997" duration="40316000" />
+      <workItem from="1711520342997" duration="48162000" />
+      <workItem from="1711718177340" duration="2671000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -427,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711693048327</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix(fix): rabbitmq prob">
+      <option name="closed" value="true" />
+      <created>1711695354262</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711695354262</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +462,8 @@
     <MESSAGE value="fix(elastic search): fix config prob" />
     <MESSAGE value="Common config module" />
     <MESSAGE value="fix(fix): rabbitmq" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): rabbitmq" />
+    <MESSAGE value="fix(fix): rabbitmq prob" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): rabbitmq prob" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

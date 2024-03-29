@@ -31,3 +31,11 @@ services:
     environment:
       - RABBITMQ_DEFAULT_USER=user
       - RABBITMQ_DEFAULT_PASS=user
+
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - '9411:9411'
+
+
