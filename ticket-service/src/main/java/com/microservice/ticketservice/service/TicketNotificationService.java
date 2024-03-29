@@ -9,5 +9,5 @@ import java.util.function.Function;
 
 public interface TicketNotificationService {
 
-    Function<Ticket, Message<TicketNotification>> notification();
+    void sendToQueue(Ticket ticket);
 }

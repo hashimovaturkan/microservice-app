@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="Common config module">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/messaging/TicketNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="fix(fix): rabbitmq">
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/NotificationDistributionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/TicketNotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/TicketNotificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" afterDir="false" />
@@ -167,7 +163,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Spring Boot.TicketServiceApplication">
     <configuration name="microservice-app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -331,8 +327,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.TicketServiceApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Gradle.microservice-app [dependencyManagement]" />
         <item itemvalue="Gradle.notification-service [dependencies]" />
         <item itemvalue="Gradle.microservice-app [dependencies]" />
@@ -365,7 +361,7 @@
       <workItem from="1711453906669" duration="1898000" />
       <workItem from="1711456132692" duration="2411000" />
       <workItem from="1711466386378" duration="4505000" />
-      <workItem from="1711520342997" duration="37907000" />
+      <workItem from="1711520342997" duration="40316000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -423,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711533744781</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix(fix): rabbitmq">
+      <option name="closed" value="true" />
+      <created>1711693048327</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711693048327</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +443,8 @@
     <MESSAGE value="Elastic search" />
     <MESSAGE value="fix(elastic search): fix config prob" />
     <MESSAGE value="Common config module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Common config module" />
+    <MESSAGE value="fix(fix): rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): rabbitmq" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -491,12 +496,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java</url>
-          <line>75</line>
+          <line>69</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java</url>
-          <line>25</line>
+          <line>17</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

@@ -2,7 +2,6 @@ package com.microservice.ticketservice.service.impl;
 
 import com.microservice.common.client.AccountServiceClient;
 import com.microservice.common.client.contract.AccountDto;
-import com.microservice.common.messaging.TicketNotification;
 import com.microservice.ticketservice.dto.TicketDto;
 import com.microservice.ticketservice.model.PriorityType;
 import com.microservice.ticketservice.model.Ticket;
@@ -10,15 +9,11 @@ import com.microservice.ticketservice.model.TicketStatus;
 import com.microservice.ticketservice.model.elasticSearch.TicketModel;
 import com.microservice.ticketservice.repository.TicketRepository;
 import com.microservice.ticketservice.repository.elasticSearch.TicketElasticRepository;
-import com.microservice.ticketservice.service.TicketNotificationService;
+import org.springframework.http.ResponseEntity;
 import com.microservice.ticketservice.service.TicketService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,9 +25,8 @@ public class TicketServiceImpl implements TicketService {
 
     private final TicketElasticRepository ticketElasticRepository;
     private final TicketRepository ticketRepository;
-    private final TicketNotificationService ticketNotificationService;
+    //private final TicketNotificationService ticketNotificationService;
     private final AccountServiceClient accountServiceClient;
-    private final StreamBridge streamBridge;
 
 
     @Override
@@ -43,14 +37,14 @@ public class TicketServiceImpl implements TicketService {
             throw new IllegalArgumentException("Description should not be empty");
 
         Ticket ticket = new Ticket();
-        //ResponseEntity<AccountDto> accountDtoResponseEntity = accountServiceClient.get(ticketDto.getAssignee());
+        ResponseEntity<AccountDto> accountDtoResponseEntity = accountServiceClient.get(ticketDto.getAssignee());
 
         ticket.setDescription(ticketDto.getDescription());
         ticket.setNotes(ticketDto.getNotes());
         ticket.setTicketDate(ticketDto.getTicketDate());
         ticket.setTicketStatus(TicketStatus.valueOf(ticketDto.getTicketStatus()));
         ticket.setPriorityType(PriorityType.valueOf(ticketDto.getPriorityType()));
-        ticket.setAssignee("2");
+        ticket.setAssignee(accountDtoResponseEntity.getBody().getId());
 
         // save mysql
         ticket = ticketRepository.save(ticket);
@@ -61,7 +55,7 @@ public class TicketServiceImpl implements TicketService {
                 .description(ticket.getDescription())
                 .notes(ticket.getNotes())
                 .id(ticket.getId())
-                .assignee("as")
+                .assignee(accountDtoResponseEntity.getBody().getNameSurname())
                 .priorityType(ticket.getPriorityType().getLabel())
                 .ticketStatus(ticket.getTicketStatus().getLabel())
                 .ticketDate(ticket.getTicketDate()).build();
@@ -73,7 +67,7 @@ public class TicketServiceImpl implements TicketService {
 
         // Queue notofication
 
-        streamBridge.send("output", ticket);
+        //ticketNotificationService.sendToQueue(ticket);
 
 
         return ticketDto;

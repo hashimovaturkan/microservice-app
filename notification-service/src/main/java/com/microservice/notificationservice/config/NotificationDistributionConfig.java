@@ -15,13 +15,13 @@ import java.util.function.Consumer;
 public class NotificationDistributionConfig {
 
 
-    @Bean
-    public Consumer<TicketNotification> input() {
-        return message -> {
-            System.out.println("---------------------------------------------------");
-            System.out.println("Notification Received. Sending to Users.");
-            System.out.println("Notification: " + message.toString());
-        };
-    }
+//    @Bean
+//    public Consumer<TicketNotification> input() {
+//        return message -> {
+//            System.out.println("---------------------------------------------------");
+//            System.out.println("Notification Received. Sending to Users.");
+//            System.out.println("Notification: " + message.toString());
+//        };
+//    }
 
 }
