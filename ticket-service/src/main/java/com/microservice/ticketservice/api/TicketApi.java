@@ -37,4 +37,9 @@ public class TicketApi {
     public ResponseEntity<Page<TicketDto>> getAll(Pageable pageable) {
         return ResponseEntity.ok(ticketService.getPagination(pageable));
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "test";
+    }
 }
