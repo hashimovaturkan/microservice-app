@@ -23,7 +23,6 @@ public class TicketNotificationServiceImpl implements TicketNotificationService 
         ticketNotification.setTicketId(ticket.getId());
         ticketNotification.setTicketDescription(ticket.getDescription());
 
-        Message<Ticket> message = MessageBuilder.withPayload(ticket).build();
         streamBridge.send("output-out-0", MessageBuilder.withPayload(ticketNotification).build());
     }
 
