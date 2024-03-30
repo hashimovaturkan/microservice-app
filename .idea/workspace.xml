@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" afterDir="false" />
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="zipkin config complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/eureka-server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/eureka-server.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/notification-service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/ticket-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notification-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/NotificationDistributionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/NotificationDistributionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/TicketServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/TicketServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/api/TicketApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/api/TicketApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketNotificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="07243bac-3289-4695-8755-5d0d7ae86984" />
+        <option name="accountId" value="5407d2ec-ee76-41b4-adc3-49fffef432ec" />
         <option name="url" value="https://github.com/hashimovaturkan/microservice-app.git" />
       </UrlAndAccount>
     </option>
@@ -169,7 +167,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TicketServiceApplication">
+  <component name="RunManager" selected="Spring Boot.NotificationServiceApplication">
     <configuration name="microservice-app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -424,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711695354262</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="zipkin config complete">
+      <option name="closed" value="true" />
+      <created>1711795577626</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711795577626</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +448,8 @@
     <MESSAGE value="Common config module" />
     <MESSAGE value="fix(fix): rabbitmq" />
     <MESSAGE value="fix(fix): rabbitmq prob" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): rabbitmq prob" />
+    <MESSAGE value="zipkin config complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="zipkin config complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -463,23 +470,19 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/configuration/TicketDistributionConfig.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/NotificationDistributionConfig.java</url>
-          <line>18</line>
-          <properties class="com.microservice.notificationservice.config.NotificationDistributionConfig">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="18" />
+          <line>19</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ticket-service/src/main/java/com/microservice/ticketservice/service/impl/TicketServiceImpl.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />

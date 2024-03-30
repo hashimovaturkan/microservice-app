@@ -9,15 +9,14 @@ import com.microservice.ticketservice.model.TicketStatus;
 import com.microservice.ticketservice.model.elasticSearch.TicketModel;
 import com.microservice.ticketservice.repository.TicketRepository;
 import com.microservice.ticketservice.repository.elasticSearch.TicketElasticRepository;
-import org.springframework.http.ResponseEntity;
+import com.microservice.ticketservice.service.TicketNotificationService;
 import com.microservice.ticketservice.service.TicketService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.function.Function;
 
 @Service
 @RequiredArgsConstructor
@@ -25,9 +24,8 @@ public class TicketServiceImpl implements TicketService {
 
     private final TicketElasticRepository ticketElasticRepository;
     private final TicketRepository ticketRepository;
-    //private final TicketNotificationService ticketNotificationService;
+    private final TicketNotificationService ticketNotificationService;
     private final AccountServiceClient accountServiceClient;
-
 
     @Override
     @Transactional
@@ -67,8 +65,7 @@ public class TicketServiceImpl implements TicketService {
 
         // Queue notofication
 
-        //ticketNotificationService.sendToQueue(ticket);
-
+        ticketNotificationService.sendToQueue(ticket);
 
         return ticketDto;
     }
