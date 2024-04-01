@@ -18,6 +18,7 @@ public class AccountApi {
         this.accountService = accountService;
     }
 
+
     @GetMapping("/{id}")
     public ResponseEntity<AccountDto> get(@PathVariable("id") String id) {
         return ResponseEntity.ok(accountService.get(id));
