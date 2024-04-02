@@ -10,12 +10,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
-@Mapper(componentModel = "spring", uses = {ObjectIdMapper.class})
-public abstract class UserViewMapper {
-    public abstract UserView toUserView(User user);
+//@Mapper(componentModel = "spring", uses = {ObjectIdMapper.class})
+//public abstract class UserViewMapper {
+//    public abstract UserView toUserView(User user);
+//    public abstract List<UserView> toUserView(List<User> users);
+//
+//
+//}
+@Component
+public class UserViewMapper {
 
-    public abstract List<UserView> toUserView(List<User> users);
+    private final ObjectIdMapper objectIdMapper;
 
+    @Autowired
+    public UserViewMapper(ObjectIdMapper objectIdMapper) {
+        this.objectIdMapper = objectIdMapper;
+    }
 
+    public UserView toUserView(User user) {
+        UserView userView = new UserView();
+        userView.setId(objectIdMapper.objectIdToString(user.getId()));
+        userView.setUsername(user.getUsername());
+        userView.setFullName(user.getFullName());
+        return userView;
+    }
+
+    public List<UserView> toUserView(List<User> users) {
+        return users.stream()
+                .map(this::toUserView)
+                .collect(Collectors.toList());
+    }
 }

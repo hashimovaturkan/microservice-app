@@ -44,11 +44,6 @@ public class User implements UserDetails, Serializable {
 
     private Set<Role> authorities = new HashSet<>();
 
-    public User(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
     @Override
     public boolean isAccountNonExpired() {
         return false;

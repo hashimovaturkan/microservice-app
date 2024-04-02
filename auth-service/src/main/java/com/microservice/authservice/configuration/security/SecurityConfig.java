@@ -125,13 +125,6 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry ->
                         authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.DELETE).hasRole("ADMIN")
                                 .requestMatchers("/").permitAll()
-//                                .requestMatchers(format("%s/**", restApiDocPath)).permitAll()
-//                                .requestMatchers(format("%s/**", swaggerPath)).permitAll()
-                                .requestMatchers("/api/public/**").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/api/author/**").permitAll()
-                                .requestMatchers(HttpMethod.POST, "/api/author/search").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/api/book/**").permitAll()
-                                .requestMatchers(HttpMethod.POST, "/api/book/search").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
