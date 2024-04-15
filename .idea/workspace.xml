@@ -4,30 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="fix(add): auth-service 1.0">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/config/WebSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/microservice/configserver/config/WebSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/auth-service.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/microservice/eurekaserver/config/WebSecurity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservice/notificationservice/config/WebSecurity.java" afterDir="false" />
+    <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/RoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/RoleToUserFrom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/proto/user.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/configuration/MongoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/configuration/json/ObjectMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/RoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/SearchUsersQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/UpdateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/UserView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/ObjectIdMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/RoleEditMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/UserEditMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/UserViewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/repository/RoleRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/service/grpc/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/DatabaseInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/api/AuthApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/api/AuthApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/ObjectIdMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/ObjectIdMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UpdateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UpdateUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserEditMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserEditMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserViewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserViewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/config/WebSecurity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/auth-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/auth-service.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/microservice/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/microservice/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/microservice/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/test/java/com/example/gateway/GatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/test/java/com/microservice/gateway/GatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +83,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ticket-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/user-service">
       <ProjectState />
     </projectState>
   </component>
@@ -153,12 +179,15 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "D:/Lessons/Java/Projects/Authentication-Service",
+    "last_opened_file_path": "D:/Lessons/Java/Projects/microservice-example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "D:/Lesson/Java/microservice-app/docs/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   },
@@ -174,13 +203,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lessons\Java\Projects\microservice-app\auth-service\src\main\java\com\microservice\authservice\domain\dto" />
+      <recent name="D:\Lessons\Java\Projects\microservice-app\auth-service\src\main\java\com\microservice\authservice" />
+      <recent name="D:\Lessons\Java\Projects\microservice-app\common\src\main" />
       <recent name="D:\Lessons\Java\Projects\microservice-app\common\src\main\java\com\microservice\common" />
-      <recent name="D:\Lessons\Java\Projects\microservice-app\notification-service\src\main\java\com\microservice\notificationservice" />
-      <recent name="D:\Lesson\Java\microservice-app\account-service\src\main\java" />
+      <recent name="D:\Lessons\Java\Projects\microservice-app\user-service\src\main\java\com\microservice\userservice\domain\dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Lesson\Java\microservice-app\account-service" />
       <recent name="D:\Lesson\Java\microservice-app\account-service\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.microservice.authservice.service" />
+      <recent name="com.microservice.userservice.service.grpc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -190,7 +225,29 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Gradle.microservice-app [dependencies]">
+    <configuration name="microservice-app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="microservice-app" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -351,6 +408,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microservice-app.user-service.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microservice-app.user-service.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
       <method v="2">
@@ -360,19 +433,6 @@
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docs.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="rabbitmq" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/docker-compose.yml" />
-        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -391,11 +451,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.microservice-app [dependencies]" />
+        <item itemvalue="Gradle.microservice-app" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.TicketServiceApplication" />
-        <item itemvalue="Gradle.microservice-app" />
         <item itemvalue="Docker.docs.zipkin: Compose Deployment" />
-        <item itemvalue="Docker.docs.rabbitmq: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -429,6 +489,7 @@
       <workItem from="1711718177340" duration="2671000" />
       <workItem from="1711871007683" duration="6126000" />
       <workItem from="1711880625407" duration="2162000" />
+      <workItem from="1713161607629" duration="10039000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -542,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711979917769</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix(fix): fix">
+      <option name="closed" value="true" />
+      <created>1712068049368</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712068049368</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +621,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="config eureka server/client" />
     <MESSAGE value="xsds" />
-    <MESSAGE value="fix(fix): fix" />
     <MESSAGE value="add Ticket service" />
     <MESSAGE value="Ticket service config" />
     <MESSAGE value="Elastic search" />
@@ -565,7 +633,8 @@
     <MESSAGE value="fix config rabbitmq" />
     <MESSAGE value="fix(add): auth-service" />
     <MESSAGE value="fix(add): auth-service 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(add): auth-service 1.0" />
+    <MESSAGE value="fix(fix): fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

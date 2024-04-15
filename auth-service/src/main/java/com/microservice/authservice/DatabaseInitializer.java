@@ -1,7 +1,6 @@
 package com.microservice.authservice;
 
 import com.microservice.authservice.domain.dto.CreateUserRequest;
-import com.microservice.authservice.domain.model.Role;
 import com.microservice.authservice.service.UserService;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
@@ -24,9 +23,9 @@ public class DatabaseInitializer implements ApplicationListener<ApplicationReady
             "Dennis Ritchie"
     );
     private final List<String> roles = List.of(
-            Role.USER_ADMIN,
-            Role.AUTHOR_ADMIN,
-            Role.BOOK_ADMIN
+            "USER_ADMIN",
+            "AUTHOR_ADMIN",
+            "BOOK_ADMIN"
     );
     private final String password = "Test12345_";
 
@@ -46,7 +45,7 @@ public class DatabaseInitializer implements ApplicationListener<ApplicationReady
             request.setRePassword(password);
             request.setAuthorities(Set.of(roles.get(i)));
 
-            userService.upsert(request);
+            userService.create(request);
         }
     }
 

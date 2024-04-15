@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/gateway" />
             <option value="$PROJECT_DIR$/notification-service" />
             <option value="$PROJECT_DIR$/ticket-service" />
+            <option value="$PROJECT_DIR$/user-service" />
           </set>
         </option>
       </GradleProjectSettings>

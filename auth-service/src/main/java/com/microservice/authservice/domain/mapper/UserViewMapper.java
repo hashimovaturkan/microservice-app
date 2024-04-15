@@ -1,11 +1,7 @@
 package com.microservice.authservice.domain.mapper;
 
 import com.microservice.authservice.domain.dto.UserView;
-import com.microservice.authservice.domain.model.User;
-import com.microservice.authservice.repository.UserRepo;
-import lombok.NoArgsConstructor;
-import org.bson.types.ObjectId;
-import org.mapstruct.Mapper;
+import com.microservice.common.UserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,15 +25,15 @@ public class UserViewMapper {
         this.objectIdMapper = objectIdMapper;
     }
 
-    public UserView toUserView(User user) {
+    public UserView toUserView(UserResponse user) {
         UserView userView = new UserView();
-        userView.setId(objectIdMapper.objectIdToString(user.getId()));
+        userView.setId(user.getId());
         userView.setUsername(user.getUsername());
-        userView.setFullName(user.getFullName());
+        userView.setFullName(user.getFullname());
         return userView;
     }
 
-    public List<UserView> toUserView(List<User> users) {
+    public List<UserView> toUserView(List<UserResponse> users) {
         return users.stream()
                 .map(this::toUserView)
                 .collect(Collectors.toList());

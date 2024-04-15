@@ -1,32 +1,51 @@
 package com.microservice.authservice.configuration.security;
 
-import com.microservice.authservice.domain.model.User;
 import io.jsonwebtoken.*;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.security.Key;
 import java.util.Date;
-
-import static java.lang.String.format;
+import java.util.List;
 
 @Component
 @RequiredArgsConstructor
 @Slf4j
+@AllArgsConstructor
 public class JwtTokenUtil {
 
-    private final String jwtSecret = "zdtlD3JK56m6wTTgsNFhqzjqP";
-    private final String jwtIssuer = "example.io";
+    @Value("${app.jwtSecret}")
+    public String jwtSecret;
 
-    public String generateAccessToken(User user) {
+    @Value("${app.jwtExpirationMs}")
+    public int jwtExpirationMs;
+
+
+    public String createAccessToken(String subject, String claimName, List<?> authorities) {
+        return createToken(subject, jwtExpirationMs, claimName, authorities);
+    }
+
+    private String createToken(String subject, int expiration, String claimName, List<?> authorities) {
+
+        Claims claims = Jwts.claims().setSubject(subject).build();
+        claims.put(claimName, authorities);
+
         return Jwts.builder()
-                .setSubject(format("%s,%s", user.getId(), user.getUsername()))
-                .setIssuer(jwtIssuer)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + 7 * 24 * 60 * 60 * 1000)) // 1 week
-                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .setExpiration(new Date(System.currentTimeMillis() + expiration))
+                .claims(claims)
+                .signWith(getSignInKey(),SignatureAlgorithm.HS256)
                 .compact();
+    }
+
+
+    private Key getSignInKey() {
+        byte[] keyBytes = Decoders.BASE64.decode(jwtSecret);
+        return Keys.hmacShaKeyFor(keyBytes);
     }
 
     public String getUserId(String token) {

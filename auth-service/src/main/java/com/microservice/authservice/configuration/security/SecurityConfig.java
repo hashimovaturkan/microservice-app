@@ -1,6 +1,8 @@
 package com.microservice.authservice.configuration.security;
 
 import com.microservice.authservice.repository.UserRepo;
+import com.microservice.authservice.service.UserService;
+import com.microservice.authservice.service.UserServiceImpl;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
@@ -40,17 +42,12 @@ import static java.lang.String.format;
 @Slf4j
 public class SecurityConfig {
 
-    private final UserRepo userRepo;
+    private final UserServiceImpl userService;
     private final JwtTokenFilter jwtTokenFilter;
 
-//    @Value("${springdoc.api-docs.path}")
-//    private String restApiDocPath;
-//    @Value("${springdoc.swagger-ui.path}")
-//    private String swaggerPath;
-
-    public SecurityConfig(UserRepo userRepo,
+    public SecurityConfig(UserServiceImpl userService,
                           JwtTokenFilter jwtTokenFilter) {
-        this.userRepo = userRepo;
+        this.userService = userService;
         this.jwtTokenFilter = jwtTokenFilter;
 
         // Inherit security context in async function calls
@@ -100,11 +97,8 @@ public class SecurityConfig {
     @Bean
     public AuthenticationManager authenticationManagerBean(HttpSecurity http) throws Exception {
         AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
-        authenticationManagerBuilder.userDetailsService(username -> userRepo
-                .findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException(
-                        String.format("User: %s, not found", username)
-                )));
+        authenticationManagerBuilder.userDetailsService(username -> userService
+                .loadUserByUsername(username));
 
         return authenticationManagerBuilder.build();
     }

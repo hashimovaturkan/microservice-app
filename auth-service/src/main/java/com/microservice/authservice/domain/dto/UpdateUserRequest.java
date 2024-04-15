@@ -9,7 +9,7 @@ import java.util.Set;
 public class UpdateUserRequest {
 
     @NotBlank
-    private String fullName;
+    private String userName;
     private Set<String> authorities;
 
 }

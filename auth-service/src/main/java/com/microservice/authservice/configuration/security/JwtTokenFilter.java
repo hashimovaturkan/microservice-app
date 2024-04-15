@@ -1,33 +1,29 @@
 package com.microservice.authservice.configuration.security;
 
-import com.microservice.authservice.domain.model.User;
-import com.microservice.authservice.repository.UserRepo;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.ExpiredJwtException;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.MalformedJwtException;
-import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.SignatureException;
-import io.jsonwebtoken.UnsupportedJwtException;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.microservice.authservice.service.UserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 
 import static java.util.List.of;
-import static java.util.Optional.ofNullable;
 import static org.springframework.util.StringUtils.isEmpty;
 
 @Component
@@ -35,7 +31,7 @@ import static org.springframework.util.StringUtils.isEmpty;
 public class JwtTokenFilter extends OncePerRequestFilter {
 
     private final JwtTokenUtil jwtTokenUtil;
-    private final UserRepo userRepo;
+    private final UserService userService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -55,15 +51,19 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             return;
         }
 
-        // Get user identity and set it on the spring security context
-        UserDetails userDetails = userRepo
-                .findByUsername(jwtTokenUtil.getUsername(token))
-                .orElse(null);
+        Algorithm algorithm = Algorithm.HMAC256(jwtTokenUtil.jwtSecret.getBytes());
+        JWTVerifier verifier = JWT.require(algorithm).build();
+        DecodedJWT decodedJWT = verifier.verify(token);
+        String username = decodedJWT.getSubject();
+        String[] roles = decodedJWT.getClaim("roles").asArray(String.class);
 
-        UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
-                userDetails, null,
-                ofNullable(userDetails).map(UserDetails::getAuthorities).orElse(of())
-        );
+        Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
+        Arrays.stream(roles).forEach(role -> {
+            authorities.add(new SimpleGrantedAuthority(role));
+        });
+
+        UsernamePasswordAuthenticationToken authentication =
+                new UsernamePasswordAuthenticationToken(username, null, authorities);
 
         authentication
                 .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));

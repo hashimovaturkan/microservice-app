@@ -37,10 +37,4 @@ services:
     ports:
       - '9411:9411'
 
-  cache:
-    image: redis:6.2-alpine
-    restart: always
-    ports:
-      - '6379:6379'
-
 

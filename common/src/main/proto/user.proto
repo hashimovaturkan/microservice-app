@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package com.microservice.common;
+
+option java_multiple_files = true;
+option java_package = "com.microservice.common";
+
+service UserService {
+  rpc saveUser(UserRequest) returns (UserResponse);
+  rpc saveRole(Role) returns (Role);
+  rpc addRoleToUser(RoleToUser) returns (Void);
+  rpc getUser(UserName) returns (UserResponse);
+  rpc getUsers(Void) returns (AllUsers);
+}
+
+message AllUsers {
+  repeated UserResponse users = 1;
+}
+
+message Void {
+}
+
+message Role {
+  string roleName = 1;
+}
+
+message UserName {
+  string username = 1;
+}
+
+message RoleToUser {
+  string username = 1;
+  string roleName = 2;
+}
+
+message UserRequest {
+  string username = 1;
+  string password = 2;
+  string fullname = 3;
+}
+
+message UserResponse {
+  int32 id = 1;
+  string username = 2;
+  string password = 3;
+  string fullname = 4;
+  repeated Role roles = 5;
+}
