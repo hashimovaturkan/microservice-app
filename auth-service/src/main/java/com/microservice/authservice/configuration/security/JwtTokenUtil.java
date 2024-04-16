@@ -14,16 +14,16 @@ import java.util.Date;
 import java.util.List;
 
 @Component
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @Slf4j
 @AllArgsConstructor
 public class JwtTokenUtil {
 
     @Value("${app.jwtSecret}")
-    public String jwtSecret;
+    public static String jwtSecret;
 
     @Value("${app.jwtExpirationMs}")
-    public int jwtExpirationMs;
+    public static int jwtExpirationMs;
 
 
     public String createAccessToken(String subject, String claimName, List<?> authorities) {
@@ -78,7 +78,7 @@ public class JwtTokenUtil {
         return claims.getExpiration();
     }
 
-    public boolean validate(String token) {
+    public static boolean validate(String token) {
         try {
             Jwts.parser().setSigningKey(jwtSecret).build().parseSignedClaims(token);
             return true;

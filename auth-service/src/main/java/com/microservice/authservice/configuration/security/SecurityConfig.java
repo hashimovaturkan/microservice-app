@@ -1,14 +1,11 @@
 package com.microservice.authservice.configuration.security;
 
-import com.microservice.authservice.repository.UserRepo;
-import com.microservice.authservice.service.UserService;
 import com.microservice.authservice.service.UserServiceImpl;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -21,7 +18,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
@@ -30,8 +26,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
-
-import static java.lang.String.format;
 
 @EnableWebSecurity
 @EnableMethodSecurity(
@@ -42,13 +36,11 @@ import static java.lang.String.format;
 @Slf4j
 public class SecurityConfig {
 
-    private final UserServiceImpl userService;
-    private final JwtTokenFilter jwtTokenFilter;
+    private final UserDetailsService userService;
+    //private final JwtTokenFilter jwtTokenFilter;
 
-    public SecurityConfig(UserServiceImpl userService,
-                          JwtTokenFilter jwtTokenFilter) {
+    public SecurityConfig(@Lazy UserDetailsService userService) {
         this.userService = userService;
-        this.jwtTokenFilter = jwtTokenFilter;
 
         // Inherit security context in async function calls
         SecurityContextHolder.setStrategyName(SecurityContextHolder.MODE_INHERITABLETHREADLOCAL);
@@ -121,8 +113,10 @@ public class SecurityConfig {
                                 .requestMatchers("/").permitAll()
                         .anyRequest().authenticated()
                 )
-                .addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(new JwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
+
+
 }

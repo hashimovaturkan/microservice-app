@@ -7,6 +7,7 @@ import com.microservice.common.*;
 import com.microservice.common.Void;
 import lombok.RequiredArgsConstructor;
 import net.devh.boot.grpc.client.inject.GrpcClient;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -22,6 +23,7 @@ import static java.lang.String.format;
 
 @Service
 @RequiredArgsConstructor
+@Lazy
 public class UserServiceImpl implements UserService, UserDetailsService {
 
     private final UserViewMapper userViewMapper;

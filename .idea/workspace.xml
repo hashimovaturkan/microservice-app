@@ -5,52 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f307b5c-e608-44ab-9146-d26bd53db715" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/RoleToUserFrom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/proto/user.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/configuration/MongoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/configuration/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/configuration/json/ObjectMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/CreateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/SearchUsersQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/UpdateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/dto/UserView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/ObjectIdMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/RoleEditMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/UserEditMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/mapper/UserViewMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/repository/RoleRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/service/grpc/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e7f947b-1bc9-4879-a03e-6faf994192ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/752aad04-0356-4209-b660-82bc605043d8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/DatabaseInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/api/AuthApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/api/AuthApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/MongoConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/configuration/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UpdateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UpdateUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/dto/UserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserEditMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserEditMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserViewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/mapper/UserViewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/domain/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/domain/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/microservice/userservice/repository/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/microservice/common/config/WebSecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/auth-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice/auth-service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/microservice/authservice/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +185,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.microservice-app [dependencies]">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
     <configuration name="microservice-app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -451,9 +411,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Gradle.microservice-app [dependencies]" />
         <item itemvalue="Gradle.microservice-app" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.TicketServiceApplication" />
         <item itemvalue="Docker.docs.zipkin: Compose Deployment" />
       </list>
@@ -489,7 +449,7 @@
       <workItem from="1711718177340" duration="2671000" />
       <workItem from="1711871007683" duration="6126000" />
       <workItem from="1711880625407" duration="2162000" />
-      <workItem from="1713161607629" duration="10039000" />
+      <workItem from="1713161607629" duration="17933000" />
     </task>
     <task id="LOCAL-00001" summary="config eureka server/client">
       <option name="closed" value="true" />
@@ -611,7 +571,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712068049368</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add auth-service and user-service">
+      <option name="closed" value="true" />
+      <created>1713178778413</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713178778413</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +602,8 @@
     <MESSAGE value="fix(add): auth-service" />
     <MESSAGE value="fix(add): auth-service 1.0" />
     <MESSAGE value="fix(fix): fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(fix): fix" />
+    <MESSAGE value="add auth-service and user-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth-service and user-service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
