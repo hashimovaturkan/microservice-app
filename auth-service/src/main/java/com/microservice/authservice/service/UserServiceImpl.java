@@ -1,10 +1,12 @@
 package com.microservice.authservice.service;
 
-import com.microservice.authservice.domain.dto.*;
-import com.microservice.authservice.domain.mapper.UserEditMapper;
+import com.microservice.authservice.domain.dto.CreateUserRequest;
+import com.microservice.authservice.domain.dto.RoleDto;
+import com.microservice.authservice.domain.dto.UserDto;
+import com.microservice.authservice.domain.dto.UserView;
 import com.microservice.authservice.domain.mapper.UserViewMapper;
-import com.microservice.common.*;
 import com.microservice.common.Void;
+import com.microservice.common.*;
 import lombok.RequiredArgsConstructor;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.context.annotation.Lazy;
@@ -16,10 +18,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.validation.ValidationException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
-
-import static java.lang.String.format;
 
 @Service
 @RequiredArgsConstructor
