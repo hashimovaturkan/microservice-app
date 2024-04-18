@@ -18,7 +18,6 @@
     <data-source name="@localhost [2]" uuid="20380d12-dbfb-46d2-9fae-49b8e119d4fe">
       <database-info product="Cassandra" version="4.1.4" jdbc-version="4.2" driver-name="Cassandra JDBC Driver" driver-version="1.4" dbms="CASSANDRA" exact-version="4.1.4" exact-driver-version="1.4">
         <identifier-quote-string>&quot;</identifier-quote-string>
-        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>

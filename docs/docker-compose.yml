@@ -37,4 +37,14 @@ services:
     ports:
       - '9411:9411'
 
+  mongodb:
+    image: mongo:6-jammy
+    ports:
+      - '27017:27017'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=user
+      - MONGO_INITDB_DATABASE=user
+
+
 
